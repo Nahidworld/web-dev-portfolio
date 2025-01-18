@@ -233,7 +233,11 @@ footer{
     margin-bottom: 30px;
     max-width: 562px;
 }
-.icons{
+.footer-column{
+    display: flex;
+    flex-direction: column;
+}
+.ficons{
     display: flex;
     gap: 24px;
 }
