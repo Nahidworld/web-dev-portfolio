@@ -135,10 +135,12 @@ main{
 }
 .item-title{
     font-weight: normal;
+    color:#757575;
 }
 .item-description{
     font-weight: bold;
     font-size: 20px;
+    color: #474747;
 }
 
 /* Skills Styles */
@@ -163,7 +165,52 @@ main{
 }
 .skill-title{
     margin-top: 30px;
+    color: #181818;
 }
 .skill-description{
     margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    color:#757575;
+}
+
+/* resume styles */
+.resume-section-title{
+    margin-bottom: 113px;
+}
+.resume-container{
+    display: flex;
+    gap: 70px;
+}
+.resume-column-title{
+    font-weight: bold;
+    font-size: 30px;
+    color: #474747;
+    margin-bottom: 30px;
+}
+.experience-title{
+    font-size: 25px;
+    font-weight: bold;
+    color: #474747;
+    margin-bottom: 10px;
+}
+.experience-subtitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: #757575;
+    margin-bottom: 20px;
+}
+.experience-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+    margin-bottom: 20px;
+}
+.resume hr{
+    margin: 30px 0px;
+}
+.resume-btn{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 113px;
 }
