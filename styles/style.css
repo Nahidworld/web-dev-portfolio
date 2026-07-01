@@ -22,11 +22,20 @@
     background-color: #FD6E0A;
     color: #fff;
     padding: 18px 35px;
+    margin-bottom: 6px;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     border: none;
     border-radius: 5px;
+    transition:.3s;
+}
+.btn-primary:hover{
+    transform:translateY(-2px);
+}
+.btn-contact:hover{
+    background:#FD6E0A;
+    color:white;
 }
 .section-title{
     font-size: 35px;
@@ -55,6 +64,13 @@ nav{
     margin: 0px 200px;
     padding: 50px 0px;
 }
+nav a{
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#FD6E0A;
+}
 nav .nav-title{
     font-weight: 800;
     font-size: 45px;
@@ -78,6 +94,7 @@ nav li a{
     display: flex;
     justify-content: space-between;
     margin: 0px 38px 0px 200px;
+    align-items:center;
 }
 .banner-content{
     max-width: 585px;
@@ -106,6 +123,10 @@ nav li a{
     background-color: #fff;
     color:#FD6E0A;
 }
+.banner-profile-pic{
+    width:400px;
+    align-items: center;
+}
 /* main styles */
 main{
     max-width: 1140px;
@@ -120,8 +141,11 @@ main{
     text-align: center;
 }
 .about-content{
-    border: 1px solid #181818;
-    background-color: #fff;
+    background:white;
+    padding:50px;
+    border-radius:12px;
+    box-shadow:0 10px 40px rgba(0,0,0,.08);
+    border:none;
 }
 .about-title{
     margin-bottom: 30px;
@@ -163,6 +187,14 @@ main{
     padding: 33px;
     border-radius: 5px;
     box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    transition:.3s;
+}
+.skill:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+}
+.skill img{
+    width:60px;
 }
 
 .skill-title{
