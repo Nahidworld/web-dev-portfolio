@@ -1,116 +1,120 @@
-# 👋 Hi, I'm Md. Fahim Bin Imam Nahid
+# 💼 Personal Portfolio Website
 
-### Java Backend Developer | Spring Boot | REST APIs | PostgreSQL | Microservices
+A modern, fully responsive personal portfolio website built with **HTML5, CSS3, and JavaScript** to showcase my skills, projects, education, and professional experience as a **Java Backend Developer**.
 
-I'm a **Computer Science & Engineering graduate** from **American International University-Bangladesh (AIUB)** with internship experience at **Brain Station 23 PLC**.
+## 🌐 Live Demo
 
-I enjoy building scalable backend applications using **Java**, **Spring Boot**, and **PostgreSQL**, while continuously learning modern software engineering practices and cloud technologies.
-
----
-
-## 🚀 About Me
-
-- 💻 Java Backend Developer
-- 🎓 B.Sc. in Computer Science & Engineering (AIUB)
-- 💼 Former Software Engineer Trainee at Brain Station 23 PLC
-- 🌱 Currently improving my Backend Development & System Design skills
-- 📚 Interested in Java, Spring Boot, Microservices, REST APIs, Databases, and Software Architecture
-- 🎯 Open to Software Engineer opportunities
+🔗 **Portfolio:** https://nahidworld.github.io/web-dev-portfolio/
 
 ---
 
-# 🛠 Tech Stack
+# 📖 Overview
 
-### Languages
+This portfolio serves as my personal website where recruiters, clients, and fellow developers can learn more about me, explore my projects, and get in touch.
 
-- Java
-- C
-- C++
-- Python
-- JavaScript
-- PHP
+The website is designed with a clean, modern interface and follows responsive design principles to ensure a great user experience across desktop, tablet, and mobile devices.
 
-### Backend
+---
 
-- Spring Boot
-- Spring MVC
-- Spring Data JPA
-- Hibernate
-- REST API
-- JWT Authentication
+# ✨ Features
 
-### Database
+- 🎨 Modern and clean UI
+- 📱 Fully responsive design
+- ⚡ Fast loading and lightweight
+- 🖼️ Hero section with profile image
+- 👨‍💻 About Me section
+- 💻 Technical Skills section
+- 🚀 Featured Projects showcase
+- 💼 Experience & Education timeline
+- 📄 Download Resume button
+- 📬 Contact section
+- ✨ Smooth scrolling navigation
+- 🎯 Scroll reveal animations
+- 🌍 SEO-friendly structure
 
-- PostgreSQL
-- MySQL
-- MS SQL Server
+---
 
-### Frontend
+# 🛠️ Built With
 
 - HTML5
 - CSS3
-- JavaScript
-- Bootstrap
-
-### Tools
-
-- Git
-- GitHub
-- Postman
-- IntelliJ IDEA
-- VS Code
-- Maven
-- Grafana
+- JavaScript (Vanilla JS)
+- Font Awesome
+- Google Fonts
 
 ---
 
-# 💼 Experience
+# 📂 Project Structure
 
-## Software Engineer Trainee
+```text
+portfolio/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+├── images/
+│   ├── nahid2.png
+│   ├── projects/
+│   │   ├── library-management.png
+│   │   ├── thesis.png
+│   │   └── ...
+│   └── icons/
+│
+├── resume/
+│   └── CV.pdf
+│
+└── README.md
+```
 
-**Brain Station 23 PLC**
+---
 
-### Responsibilities
+# 📸 Screenshots
 
-- Developed backend features using Java Spring Boot
-- Worked with Fintech Microservices
-- Investigated and resolved production issues
-- Prepared Root Cause Analysis (RCA) reports
-- Monitored applications using Grafana
-- Collaborated in Agile software development teams
+## Home Page
+
+> Add a screenshot here
+
+```
+images/screenshots/home.png
+```
+
+## Projects Section
+
+> Add a screenshot here
+
+```
+images/screenshots/projects.png
+```
+
+## Mobile View
+
+> Add a screenshot here
+
+```
+images/screenshots/mobile.png
+```
 
 ---
 
 # 🚀 Featured Projects
 
-## 📚 Library Management System
+### 📚 Library Management System
 
-Backend application developed using:
-
-- Java
-- Spring Boot
-- PostgreSQL
-- Spring Security
-- REST APIs
-
-### Features
+A backend application built with **Java Spring Boot** featuring:
 
 - Authentication
 - Book Management
-- Category Management
-- Borrow System
-- Booking System
-- Review System
-- Donation Requests
-- Admin Settings
+- Borrow & Booking System
+- Reviews
+- PostgreSQL Database
+- REST APIs
 
 ---
 
-## 🩺 GI Disease Classification
+### 🩺 GI Disease Classification
 
-Undergraduate Thesis
-
-Deep Learning based gastrointestinal disease classification using
+An undergraduate research project focused on gastrointestinal disease classification using:
 
 - Ensemble CNN
 - CBAM
@@ -120,53 +124,59 @@ Deep Learning based gastrointestinal disease classification using
 
 ---
 
-# 🎯 Current Learning
+# 📱 Responsive Design
 
-- Spring Security
-- Microservices
-- Docker
-- System Design
-- Design Patterns
-- Clean Architecture
-- AWS Fundamentals
+The website is optimized for:
 
----
-
-# 📊 GitHub Stats
-
-<p align="center">
-
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Nahidwolrd&show_icons=true&theme=tokyonight"/>
-
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=Nahidworld&theme=tokyonight"/>
-
-</p>
+- 💻 Desktop
+- 💼 Laptop
+- 📱 Mobile
+- 📟 Tablet
 
 ---
 
-# 📈 Most Used Languages
+# 🚀 Getting Started
 
-<p align="center">
+Clone the repository
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nahidworld&layout=compact&theme=tokyonight"/>
+```bash
+git clone https://github.com/Nahidworld/web-dev-portfolio
+```
 
-</p>
+Navigate to the project
 
----
+```bash
+cd portfolio
+```
 
-# 🌐 Connect With Me
+Open `index.html` in your browser.
 
-- 💼 LinkedIn: https://linkedin.com/in/fahimbinimam
-- 💻 GitHub: https://github.com/Nahidworld
-- 📧 Email: mfbinahid@gmail.com
-- 🌍 Portfolio: https://nahidworld.github.io/web-dev-portfolio/
-
----
-
-# 💡 Career Objective
-
-To build reliable, scalable, and maintainable backend systems while continuously improving my software engineering skills and contributing to impactful products.
+No additional dependencies or installation are required.
 
 ---
 
-⭐ Thank you for visiting my profile! Feel free to explore my repositories and connect with me.
+# 📬 Contact
+
+**Md. Fahim Bin Imam Nahid**
+
+📧 Email: mfbinahid@gmail.com
+
+💼 LinkedIn: https://linkedin.com/in/fahimbinimam
+
+💻 GitHub: https://github.com/nahidworld
+
+🌐 Portfolio: https://nahidworld.github.io/web-dev-portfolio/
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
+
+Feel free to fork this repository and customize it for your own personal portfolio.
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, please consider giving it a ⭐ on GitHub. It helps others discover the project and supports my work.
