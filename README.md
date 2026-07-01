@@ -7,7 +7,13 @@ A modern, fully responsive personal portfolio website built with **HTML5, CSS3, 
 🔗 **Portfolio:** https://nahidworld.github.io/web-dev-portfolio/
 
 ---
+![Portfolio Preview](images/screenshots/home.png)
 
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Responsive](https://img.shields.io/badge/Responsive-Yes-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 # 📖 Overview
 
 This portfolio serves as my personal website where recruiters, clients, and fellow developers can learn more about me, explore my projects, and get in touch.
@@ -73,11 +79,8 @@ portfolio/
 
 ## Home Page
 
-> Add a screenshot here
-
-```
 images/screenshots/home.png
-```
+
 
 ## Projects Section
 
