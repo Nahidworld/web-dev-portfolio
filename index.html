@@ -7,11 +7,31 @@
     <title>Md. Fahim Bin Imam Nahid | Java Backend Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
 
+    <!-- Apply the saved/system theme before stylesheets load to avoid a flash. -->
+    <script>
+        (function () {
+            try {
+                var stored = localStorage.getItem("portfolio-theme");
+                var theme = stored === "light" || stored === "dark"
+                    ? stored
+                    : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+                document.documentElement.dataset.theme = theme;
+                document.documentElement.style.colorScheme = theme;
+            } catch (error) {
+                /* CSS media query fallback handles system preference without JS. */
+            }
+        })();
+    </script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/tokens.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/theme.js" defer></script>
 </head>
 
 <body>
@@ -25,7 +45,21 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <a class="btn" href="resume\Resume-of-Md-Fahim-Bin-Imam-Nahid.pdf" download>Download CV</a>
+            <div class="nav-actions">
+                <button class="theme-toggle" type="button" data-theme-toggle
+                    aria-label="Switch to dark theme" aria-pressed="false" title="Switch to dark theme">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"></path>
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"></path>
+                    </svg>
+                </button>
+                <a class="btn" href="resume\Resume-of-Md-Fahim-Bin-Imam-Nahid.pdf" download>Download CV</a>
+            </div>
         </nav>
 
         <section class="hero container">

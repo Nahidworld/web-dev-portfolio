@@ -1,0 +1,120 @@
+/* ==========================================================================
+   Design tokens — Minimalist Editorial Engineering Portfolio
+   ========================================================================== */
+
+:root {
+    /* Source palettes (do not use directly — use the semantic tokens below) */
+    --palette-light-background: #F8F7F4;
+    --palette-light-surface: #FFFFFF;
+    --palette-light-text-primary: #171717;
+    --palette-light-text-secondary: #737373;
+    --palette-light-accent: #B68C5A;
+    --palette-light-border: #E7E5E0;
+
+    --palette-dark-background: #111111;
+    --palette-dark-surface: #1A1A1A;
+    --palette-dark-text-primary: #F5F5F2;
+    --palette-dark-text-secondary: #A3A3A3;
+    --palette-dark-accent: #D6AD78;
+    --palette-dark-border: #303030;
+
+    /* Semantic colors — light theme defaults */
+    --color-background: var(--palette-light-background);
+    --color-surface: var(--palette-light-surface);
+    --color-text-primary: var(--palette-light-text-primary);
+    --color-text-secondary: var(--palette-light-text-secondary);
+    --color-accent: var(--palette-light-accent);
+    --color-border: var(--palette-light-border);
+
+    /* Derived colors: contrast-safe variants of the accent */
+    --color-accent-hover: #9A7141;
+    --color-accent-text: #7A5A2E;
+    --color-accent-subtle: #F3ECE2;
+    --color-on-accent: #171717;
+
+    /* Elevation — deliberately restrained */
+    --shadow-subtle: 0 1px 2px rgb(23 23 23 / 0.04);
+    --shadow-lift: 0 12px 28px rgb(23 23 23 / 0.08);
+
+    /* Typography */
+    --font-display: "Instrument Serif", "Playfair Display", Georgia, serif;
+    --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: clamp(1.125rem, 1.05rem + 0.3vw, 1.25rem);
+    --text-xl: clamp(1.35rem, 1.2rem + 0.7vw, 1.75rem);
+    --text-2xl: clamp(1.75rem, 1.5rem + 1.2vw, 2.5rem);
+    --text-3xl: clamp(2.25rem, 1.8rem + 2.2vw, 3.5rem);
+    --text-4xl: clamp(3rem, 2.2rem + 4vw, 5.5rem);
+
+    --leading-tight: 1.05;
+    --leading-snug: 1.25;
+    --leading-body: 1.7;
+    --tracking-tight: -0.02em;
+    --tracking-label: 0.14em;
+    --measure: 68ch;
+
+    /* Spacing — 4px base */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+    --space-8: 3rem;
+    --space-10: 4rem;
+    --space-12: 6rem;
+    --space-16: 8rem;
+    --space-section: clamp(4rem, 8vw, 8rem);
+
+    /* Shape, motion, structure */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-pill: 999px;
+    --border-hairline: 1px solid var(--color-border);
+    --transition-theme: 220ms ease;
+    --container: 1100px;
+    --z-nav: 10;
+}
+
+/* Dark theme — explicit user choice or script-applied default */
+:root[data-theme="dark"] {
+    --color-background: var(--palette-dark-background);
+    --color-surface: var(--palette-dark-surface);
+    --color-text-primary: var(--palette-dark-text-primary);
+    --color-text-secondary: var(--palette-dark-text-secondary);
+    --color-accent: var(--palette-dark-accent);
+    --color-border: var(--palette-dark-border);
+
+    --color-accent-hover: #E7C69B;
+    --color-accent-text: var(--palette-dark-accent);
+    --color-accent-subtle: #2A241D;
+    --color-on-accent: #111111;
+
+    --shadow-subtle: none;
+    --shadow-lift: 0 12px 28px rgb(0 0 0 / 0.35);
+}
+
+/* No-JavaScript fallback: honor the system preference on first visit */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]):not([data-theme="dark"]) {
+        --color-background: var(--palette-dark-background);
+        --color-surface: var(--palette-dark-surface);
+        --color-text-primary: var(--palette-dark-text-primary);
+        --color-text-secondary: var(--palette-dark-text-secondary);
+        --color-accent: var(--palette-dark-accent);
+        --color-border: var(--palette-dark-border);
+
+        --color-accent-hover: #E7C69B;
+        --color-accent-text: var(--palette-dark-accent);
+        --color-accent-subtle: #2A241D;
+        --color-on-accent: #111111;
+
+        --shadow-subtle: none;
+        --shadow-lift: 0 12px 28px rgb(0 0 0 / 0.35);
+    }
+}

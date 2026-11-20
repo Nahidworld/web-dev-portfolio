@@ -1,0 +1,135 @@
+/* ==========================================================================
+   Base layer — reset, typography foundation, accessibility, theme control
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    font-size: var(--text-base);
+    line-height: var(--leading-body);
+    -webkit-font-smoothing: antialiased;
+    transition: background-color var(--transition-theme), color var(--transition-theme);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: var(--leading-tight);
+    letter-spacing: var(--tracking-tight);
+}
+
+p {
+    max-width: var(--measure);
+}
+
+a {
+    color: inherit;
+}
+
+button {
+    font: inherit;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+::selection {
+    background: var(--color-accent-subtle);
+    color: var(--color-text-primary);
+}
+
+:focus-visible {
+    outline: 2px solid var(--color-accent-text);
+    outline-offset: 3px;
+}
+
+/* Components with themed surfaces transition together when the theme changes */
+header,
+nav,
+footer,
+.info-grid > div,
+.card,
+.project-card,
+.timeline-item {
+    transition: background-color var(--transition-theme),
+        border-color var(--transition-theme),
+        color var(--transition-theme);
+}
+
+/* Theme toggle — the only new control in this foundation layer */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    flex: 0 0 2.25rem;
+    padding: 0;
+    border: var(--border-hairline);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: color 160ms ease, border-color 160ms ease, background-color var(--transition-theme);
+}
+
+.theme-toggle:hover {
+    color: var(--color-accent-text);
+    border-color: var(--color-accent);
+}
+
+.theme-toggle svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.theme-toggle .icon-moon {
+    display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-sun {
+    display: none;
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-moon {
+    display: block;
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
