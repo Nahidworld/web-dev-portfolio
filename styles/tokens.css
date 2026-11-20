@@ -31,6 +31,7 @@
     --color-accent-text: #7A5A2E;
     --color-accent-subtle: #F3ECE2;
     --color-on-accent: #171717;
+    --color-nav-scrolled: rgb(248 247 244 / 0.88);
 
     /* Elevation — deliberately restrained */
     --shadow-subtle: 0 1px 2px rgb(23 23 23 / 0.04);
@@ -94,6 +95,7 @@
     --color-accent-text: var(--palette-dark-accent);
     --color-accent-subtle: #2A241D;
     --color-on-accent: #111111;
+    --color-nav-scrolled: rgb(17 17 17 / 0.88);
 
     --shadow-subtle: none;
     --shadow-lift: 0 12px 28px rgb(0 0 0 / 0.35);
@@ -113,6 +115,7 @@
         --color-accent-text: var(--palette-dark-accent);
         --color-accent-subtle: #2A241D;
         --color-on-accent: #111111;
+        --color-nav-scrolled: rgb(17 17 17 / 0.88);
 
         --shadow-subtle: none;
         --shadow-lift: 0 12px 28px rgb(0 0 0 / 0.35);

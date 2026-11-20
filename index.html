@@ -31,20 +31,27 @@
     <link rel="stylesheet" href="styles/tokens.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/hero.css">
     <script src="scripts/theme.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 
 <body>
-    <header id="home">
-        <nav class="container">
-            <div class="logo">Na<span>h</span>id</div>
-            <ul class="nav-links">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+        <nav class="nav container" aria-label="Primary">
+            <a class="brand" href="#home" aria-label="Nahid — back to top">NAHID<span>.</span></a>
+
+            <ul class="nav-links" id="primary-navigation">
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#research">Research</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
             <div class="nav-actions">
                 <button class="theme-toggle" type="button" data-theme-toggle
                     aria-label="Switch to dark theme" aria-pressed="false" title="Switch to dark theme">
@@ -58,29 +65,51 @@
                         <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"></path>
                     </svg>
                 </button>
-                <a class="btn" href="resume\Resume-of-Md-Fahim-Bin-Imam-Nahid.pdf" download>Download CV</a>
+                <a class="btn btn--compact" href="resume/Resume-of-Md-Fahim-Bin-Imam-Nahid.pdf" download>Resume</a>
             </div>
-        </nav>
 
-        <section class="hero container">
-            <div class="hero-text">
-                <h3>Hello, I'm</h3>
-                <h1>Nahid</h1>
-                <p class="polymorph">Java Backend Developer</p>
-                <p>Computer Science graduate with internship experience at Brain Station 23 PLC. Passionate about Java,
-                    Spring Boot, REST APIs, PostgreSQL, Microservices and building scalable backend applications.</p>
-                <div class="hero-buttons">
-                    <a class="btn" href="resume\Resume-of-Md-Fahim-Bin-Imam-Nahid.pdf" download>Download Resume</a>
-                    <a class="btn-outline" href="#projects">View Projects</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/nahid2.png" alt="Nahid">
-            </div>
-        </section>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation"
+                aria-label="Open navigation menu">
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+                <span class="menu-toggle__bar"></span>
+            </button>
+        </nav>
     </header>
 
-    <main>
+    <main id="main-content">
+        <section class="hero container" id="home">
+            <div class="hero__content">
+                <p class="hero__eyebrow">Software Engineer</p>
+                <h1 class="hero__title">
+                    <span class="hero__line">Building thoughtful</span>
+                    <span class="hero__line">digital experiences<span class="hero__period">.</span></span>
+                </h1>
+                <p class="hero__intro">Hi, I'm Nahid — a Software Engineer interested in frontend development,
+                    modern web technologies, and building meaningful digital products.</p>
+                <ul class="hero__meta">
+                    <li><span>Based in</span> Bangladesh</li>
+                    <li><span>Education</span> Computer Science &amp; Engineering graduate</li>
+                    <li><span>Experience</span> Former Software Engineer Trainee at Brain Station 23</li>
+                </ul>
+                <div class="hero__actions">
+                    <a class="btn" href="#projects">Explore My Work</a>
+                    <a class="btn-outline" href="resume/Resume-of-Md-Fahim-Bin-Imam-Nahid.pdf" download>Download Resume</a>
+                </div>
+                <ul class="hero__socials" aria-label="Social links">
+                    <li><a href="https://github.com/Nahidworld" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/fahimbinimam" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
+                    <li><a href="mailto:fahimbinimam@gmail.com">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</a></li>
+                </ul>
+            </div>
+            <figure class="hero__portrait">
+                <img src="images/nahid2.png" alt="Portrait of Nahid" width="450" height="570">
+                <figcaption>Md. Fahim Bin Imam Nahid<span>Software Engineer</span></figcaption>
+            </figure>
+        </section>
 
         <section id="about" class="container">
             <h2>About Me</h2>
@@ -153,7 +182,7 @@
 
                 <!-- Project 2 -->
 
-                <div class="project-card">
+                <div class="project-card" id="research">
                     <img src="images/projects/thesis.png" alt="GI Disease Classification">
                     <div class="project-content">
                         <h3>GI Disease Classification</h3>

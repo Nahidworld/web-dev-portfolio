@@ -16,49 +16,6 @@ body {
     margin: auto
 }
 
-header {
-    background: linear-gradient(135deg, var(--color-surface), var(--color-accent-subtle))
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 22px 10px;
-    position: sticky;
-    top: 0;
-    background: var(--color-surface);
-    border-bottom: var(--border-hairline);
-    z-index: var(--z-nav)
-}
-
-.logo {
-    font-size: 2rem;
-    font-weight: 800
-}
-
-.logo span {
-    color: var(--color-accent-text)
-}
-
-.nav-links {
-    display: flex;
-    gap: 28px;
-    list-style: none
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: var(--color-text-secondary);
-    font-weight: 600;
-    transition: .3s
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-    color: var(--color-accent-text)
-}
-
 .btn,
 .btn-outline {
     padding: 12px 24px;
@@ -89,47 +46,8 @@ nav {
     color: var(--color-on-accent)
 }
 
-.hero {
-    display: grid;
-    grid-template-columns: 1.2fr .8fr;
-    align-items: center;
-    gap: 40px;
-    padding: 70px 0
-}
-
-.hero h1 {
-    font-size: 3.2rem
-}
-
-.hero h2 {
-    color: var(--color-accent);
-    margin: 10px 0 20px
-}
-
-.hero p {
-    margin-bottom: 30px;
-    color: var(--color-text-secondary)
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap
-}
-
-.hero-image img {
-    width: 100%;
-    max-width: 420px;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-subtle)
-}
-
 section {
     padding: 80px 0
-}
-
-.polymorph {
-    font-size: 2rem
 }
 
 section h2 {
@@ -305,36 +223,12 @@ footer a {
 
 @media(max-width:900px) {
 
-    .hero,
     .card-grid {
         grid-template-columns: 1fr
     }
 
-    .hero {
-        text-align: center
-    }
-
-    .hero-image {
-        order: -1
-    }
-
-    nav {
-        flex-wrap: wrap;
-        gap: 16px
-    }
-
-    .nav-links {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap
-    }
-
     .info-grid {
         grid-template-columns: 1fr
-    }
-
-    .hero h1 {
-        font-size: 2.5rem
     }
 }
 
@@ -344,10 +238,6 @@ footer a {
     .btn-outline {
         width: 100%;
         text-align: center
-    }
-
-    .hero-buttons {
-        flex-direction: column
     }
 
     section {

@@ -1,22 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     // ==========================
-    // Active Navigation Link
-    // ==========================
-    const navLinks = document.querySelectorAll(".nav-links a");
-
-    navLinks.forEach(link => {
-        link.addEventListener("click", function () {
-
-            navLinks.forEach(item => {
-                item.classList.remove("active");
-            });
-
-            this.classList.add("active");
-        });
-    });
-
-    // ==========================
     // Reveal Animation on Scroll
     // ==========================
     const revealElements = document.querySelectorAll(
@@ -52,25 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
         element.style.transition = "all 0.7s ease";
 
         revealObserver.observe(element);
-
-    });
-
-    // ==========================
-    // Navbar Shadow
-    // ==========================
-    const navbar = document.querySelector("nav");
-
-    window.addEventListener("scroll", () => {
-
-        if (window.scrollY > 30) {
-
-            navbar.style.boxShadow = "0 10px 25px rgba(0,0,0,.08)";
-
-        } else {
-
-            navbar.style.boxShadow = "none";
-
-        }
 
     });
 
